@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 
-function Task() {
+function Task({taskName}) {
+  const [del, setDel] = useState(taskName)
+
+
   return (
     <div className="task">
-      <div className="label">CATEGORY HERE</div>
-      <div className="text">TEXT HERE</div>
+      <div className="label">{taskName.category}</div>
+      <div className="text">{taskName.text}</div>
       <button className="delete">X</button>
     </div>
   );
