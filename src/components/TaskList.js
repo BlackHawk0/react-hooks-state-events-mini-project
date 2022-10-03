@@ -13,7 +13,6 @@ function TaskList({tasks, onDeleteTask}) {
   return (
     <div className="tasks">
       {taskList}
-      {/* display a list of tasks using Task component */}
     </div>
   );
 }
